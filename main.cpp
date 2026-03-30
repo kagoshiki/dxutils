@@ -21,7 +21,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// Setting
 	ChangeWindowMode(TRUE);							// Window mode
-	SetGraphMode(1200, 600, 32);					// Window size
+	SetGraphMode(1050, 500, 32);					// Window size
 	SetBackgroundColor(255, 255, 255);	// Background color
 	SetMouseDispFlag(TRUE);							// Show mouse
 
