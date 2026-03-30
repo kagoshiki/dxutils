@@ -1,6 +1,6 @@
 # DXライブラリ向けユーティリティ
 ヘッダファイルのみで動作する、関数プロットと描画のためのユーティリティ関数です。
-![sample](https://github.com/kagoshiki/dxutils/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202026-03-30%20185946.png)
+![sample](https://github.com/kagoshiki/dxutils/blob/master/sample_image.png)
 
 ## draw_plot.h
 関数ポインタを受け取り、指定の範囲でプロットを行います。
