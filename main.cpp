@@ -74,7 +74,7 @@ void Display() {
 		-6.0, 6.0, -0.2, 1.2
 	);
 	DrawPlot(
-		GX, GY, GX + GSIZE, GY + GSIZE, [](double x) { return exp(x); },
+		GX, GY, GX + GSIZE, GY + GSIZE, [](double x) { return 0.5 * sin(x) + 0.5; },
 		-6.0, 6.0, -0.2, 1.2, GetColor(255, 0, 0)
 	);
 	UpdateDrawingArea(
