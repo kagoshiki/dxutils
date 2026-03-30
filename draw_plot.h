@@ -30,10 +30,6 @@ inline int DrawPlot(
 		const float sy = y2 - (y - y_min) / (y_max - y_min) * height;
 
 		if (i > 0) {
-			// 前の点と今回の点がどちらもグラフ範囲外である場合、線を引かない
-			//if (!((prev_sy < y1 && sy < y1) || (prev_sy > y2 && sy > y2))) {
-			//	DrawLineAA(prev_sx, prev_sy, sx, sy, 0);
-			//}
 			if ((prev_sy > y1 && sy > y1) && (prev_sy < y2 && sy < y2)) {
 				DrawLineAA(prev_sx, prev_sy, sx, sy, color);
 			}
