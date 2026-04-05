@@ -11,6 +11,7 @@ inline int DrawPlot(
 ) {
 
 	DrawBox(x1, y1, x2, y2, 0, FALSE);
+	SetDrawArea(x1, y1, x2, y2);
 	
 	const int width = x2 - x1;
 	const int height = y2 - y1;
@@ -30,7 +31,7 @@ inline int DrawPlot(
 		const float sy = y2 - (y - y_min) / (y_max - y_min) * height;
 
 		if (i > 0) {
-			if ((prev_sy > y1 && sy > y1) && (prev_sy < y2 && sy < y2)) {
+			if ((prev_sy > y1 && sy > y1) || (prev_sy < y2 && sy < y2)) {
 				DrawLineAA(prev_sx, prev_sy, sx, sy, color);
 			}
 		}
@@ -38,6 +39,8 @@ inline int DrawPlot(
 		prev_sx = sx;
 		prev_sy = sy;
 	}
+
+	SetDrawAreaFull();
 
 	return 0;
 }
