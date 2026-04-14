@@ -14,15 +14,14 @@ void Display();
 
 double image[28 * 28] = { 0.0 };
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
-{
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 	int MouseInput;
 	int MouseX, MouseY;
 
 	// Setting
 	ChangeWindowMode(TRUE);							// Window mode
 	SetGraphMode(1050, 500, 32);					// Window size
-	SetBackgroundColor(255, 255, 255);	// Background color
+	SetBackgroundColor(255, 255, 255);				// Background color
 	SetMouseDispFlag(TRUE);							// Show mouse
 
 	// Init
